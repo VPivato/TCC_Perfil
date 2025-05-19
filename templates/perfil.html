@@ -60,36 +60,72 @@
             </section>
         </aside>
 
-        <aside id="direita">
-            <div id="main-content">
-                <h1 id="info-gerais">Informações Gerais</h1>
-                <div id="foto-perfil-wrapper">
-                    <img src="../static/images/cat.jfif" alt="" id="foto-perfil">
-                    <button id="edit-pfp">
-                        <img src="../static/images/edit.png" id="edit-icon">
-                    </button>
+        <div id="conteudo">
+            <div id="conteudo-geral" class="conteudo-pagina ativo">
+                <div id="main-content">
+                    <h1 id="titulo-gerais" class="titulo-conteudo">Informações Gerais</h1>
+                    <div id="foto-perfil-wrapper">
+                        <img src="../static/images/cat.jfif" alt="" id="foto-perfil">
+                        <button id="edit-pfp">
+                            <img src="../static/images/edit.png" id="edit-icon">
+                        </button>
+                    </div>
+
+                    <form action="" method="POST" id="perfil-informacoes-basicas">
+                        <label for="nome-perfil" class="label-opcao">Nome de usuário</label>
+                        <input type="text" id="nome-perfil" name="nome-perfil" class="perfil-inpt"
+                            placeholder="Fulano da Silva" disabled>
+
+                        <label for="rm-perfil" class="label-opcao">RM</label>
+                        <input type="text" id="rm-perfil" name="rm-perfil" class="perfil-inpt" placeholder="07282"
+                            disabled>
+
+                        <label for="cod-etec-perfil" class="label-opcao">Código ETEC</label>
+                        <input type="text" id="cod-etec-perfil" name="cod-etec-perfil" class="perfil-inpt"
+                            placeholder="055" disabled>
+
+                        <label for="instituicao-perfil" class="label-opcao">Instituição</label>
+                        <input type="text" id="instituicao-perfil" name="instituicao-perfil" class="perfil-inpt"
+                            placeholder="ETEC Prof. Eudécio Luiz Vicente" disabled>
+                    </form>
                 </div>
-
-                <form action="" method="POST" id="perfil-informacoes-basicas">
-                    <label for="nome-perfil">Nome de usuário</label>
-                    <input type="text" id="nome-perfil" name="nome-perfil" class="perfil-inpt"
-                        placeholder="Fulano da Silva" disabled>
-
-                    <label for="rm-perfil">RM</label>
-                    <input type="text" id="rm-perfil" name="rm-perfil" class="perfil-inpt" placeholder="07282" disabled>
-
-                    <label for="cod-etec-perfil">Código ETEC</label>
-                    <input type="text" id="cod-etec-perfil" name="cod-etec-perfil" class="perfil-inpt" placeholder="055"
-                        disabled>
-
-                    <label for="instituicao-perfil">Instituição</label>
-                    <input type="text" id="instituicao-perfil" name="instituicao-perfil" class="perfil-inpt"
-                        placeholder="ETEC Prof. Eudécio Luiz Vicente" disabled>
-                </form>
             </div>
-        </aside>
 
-    </div>
+            <div id="conteudo-saldo-pagamentos" class="conteudo-pagina">
+                <div id="main-content">
+                    <h1 id="titulo-saldo-pagamentos" class="titulo-conteudo">Saldo / Pagamentos</h1>
+                </div>
+            </div>
+
+            <div id="conteudo-comprovantes" class="conteudo-pagina">
+                <div id="main-content">
+                    <h1 id="titulo-comprovantes" class="titulo-conteudo">Comprovantes</h1>
+                </div>
+            </div>
+
+            <div id="conteudo-stats" class="conteudo-pagina">
+                <div id="main-content">
+                    <h1 id="titulo-stats" class="titulo-conteudo">Estatísticas</h1>
+                </div>
+            </div>
+
+            <div id="conteudo-conf" class="conteudo-pagina">
+                <div id="main-content">
+                    <h1 id="titulo-conf" class="titulo-conteudo">Preferências</h1>
+
+                    <p class="label-opcao">Modo escuro</p>
+                    <label class="switch">
+                        <input type="checkbox" id="modo-escuro-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="conteudo-sair" class="conteudo-pagina">
+            </div>
+        </div>
+
+        <script src="../static/js/perfil-script.js"></script>
 </body>
 
 </html>
