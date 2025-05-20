@@ -10,7 +10,22 @@
 
 <body>
     <header>
-        <nav></nav>
+        <nav>
+            <div id="notif-container">
+                <div id="sino">
+                    <img src="../static/images/notif.png" id="notif-icon" class="icon">
+                    <span id="notif-contador">1</span>
+                </div>
+                <div id="painel-notif" class="hidden">
+                    <ul id="lista-notif">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
         <hr id="linha-header">
     </header>
 
@@ -24,32 +39,32 @@
 
             <section id="lower-section">
                 <div id="geral-wrapper" class="aside-wrapper active">
-                    <img src="../static/images/perfil.png" alt="" id="geral-icon" class="aside-icon">
+                    <img src="../static/images/perfil.png" alt="" id="geral-icon" class="aside-icon icon">
                     <a href="#" id="geral-p" class="aside-a">Geral</a>
                 </div>
 
                 <div id="saldo-pagamentos-wrapper" class="aside-wrapper">
-                    <img src="../static/images/cartao.png" alt="" id="saldo-pagamentos-icon" class="aside-icon">
+                    <img src="../static/images/cartao.png" alt="" id="saldo-pagamentos-icon" class="aside-icon icon">
                     <a href="#" id="saldo-pagamentos-p" class="aside-a">Saldo / Pagamentos</a>
                 </div>
 
                 <div id="comprovantes-wrapper" class="aside-wrapper">
-                    <img src="../static/images/comprovante.png" alt="" id="comprovantes-icon" class="aside-icon">
+                    <img src="../static/images/comprovante.png" alt="" id="comprovantes-icon" class="aside-icon icon">
                     <a href="#" id="comprovantes-p" class="aside-a">Comprovantes</a>
                 </div>
 
                 <div id="stats-wrapper" class="aside-wrapper">
-                    <img src="../static/images/stats.png" alt="" id="stats-icon" class="aside-icon">
+                    <img src="../static/images/stats.png" alt="" id="stats-icon" class="aside-icon icon">
                     <a href="#" id="stats-p" class="aside-a">Estatísticas</a>
                 </div>
 
                 <div id="conf-wrapper" class="aside-wrapper">
-                    <img src="../static/images/conf.png" alt="" id="conf-icon" class="aside-icon">
+                    <img src="../static/images/conf.png" alt="" id="conf-icon" class="aside-icon icon">
                     <a href="#" id="conf-p" class="aside-a">Configurações</a>
                 </div>
 
                 <div id="sair-wrapper" class="aside-wrapper">
-                    <img src="../static/images/sair.png" alt="" id="sair-icon" class="aside-icon">
+                    <img src="../static/images/sair.png" alt="" id="sair-icon" class="aside-icon icon">
                     <a href="#" id="sair-p" class="aside-a">Sair</a>
                 </div>
 
@@ -116,6 +131,12 @@
                     <p class="label-opcao">Modo escuro</p>
                     <label class="switch">
                         <input type="checkbox" id="modo-escuro-toggle">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <p class="label-opcao">Desabilitar notificações</p>
+                    <label class="switch">
+                        <input type="checkbox" id="notif-toggle">
                         <span class="slider round"></span>
                     </label>
                 </div>

@@ -1,6 +1,7 @@
 const botoes = document.querySelectorAll('.aside-wrapper');
 const conteudos = document.querySelectorAll('.conteudo-pagina');
 
+// MUDANÇA DE PÁGINA MENU LATERAL
 botoes.forEach(botao => {
     botao.addEventListener("click", () => {
         // Remover classe 'ativo' de todos os botões
@@ -25,7 +26,7 @@ botoes.forEach(botao => {
     })
 })
 
-
+// MODO ESCURO
 const toggle = document.getElementById('modo-escuro-toggle');
 toggle.addEventListener('change', () => {
   document.body.classList.toggle('modo-escuro');
@@ -36,3 +37,17 @@ if (localStorage.getItem('modo-escuro') === 'true') {
   document.body.classList.add('modo-escuro');
   toggle.checked = true;
 }
+
+// PAINEL NOTIFICAÇÕES
+const painel = document.getElementById('painel-notif');
+const sino = document.getElementById('sino');
+const lista = document.getElementById('lista-notif');
+const contador = document.getElementById('notif-contador');
+
+let notifNaoLidas = 0;
+
+sino.addEventListener('click', () => {
+    painel.classList.toggle('hidden');
+    notifNaoLidas = 0;
+    contador.style.display = 'none';
+});
